@@ -48,49 +48,49 @@ while(hundredcounter<tryinput):
 
   
   
-  if(qual<=additionalrollschance+10000):
+  if(num1<=additionalrollschance+10000):
     additionalrollscount+=1
     num2=random.randint(1,100)
     if(num2 <= quantity):
       additionalrollscount+=1
       
-  if(qual<=kakerarewardchance):
+  if(num1<=kakerarewardchance*quality):
     kakerarewardcount+=1
     num2=random.randint(1,100)
     if(num2 <= quantity):
       kakerarewardcount+=1
       
-  if(qual<=betterrtcooldownchance):
+  if(num1<=betterrtcooldownchance*quality):
     betterrtcooldowncount+=1
     num2=random.randint(1,100)
     if(num2 <= quantity):
       betterrtcooldowncount+=1
       
-  if(qual<=disablespotschance):
+  if(num1<=disablespotschance*quality):
     disablespotscount+=1
     num2=random.randint(1,100)
     if(num2 <= quantity):
       disablespotscount+=1
       
-  if(qual<=addrollschance):
+  if(num1<=addrollschance*quality):
     addrollscount+=1
     num2=random.randint(1,100)
     if(num2 <= quantity):
       addrollscount+=1
       
-  if(qual<=wishlistspotchance):
+  if(num1<=wishlistspotchance*quality):
     wishlistspotcount+=1
     num2=random.randint(1,100)
     if(num2 <= quantity):
       wishlistspotcount+=1
       
-  if(qual<=wishprotectchance):
+  if(num1<=wishprotectchance*quality):
     wishprotectcount+=1
     num2=random.randint(1,100)
     if(num2 <= quantity):
       wishprotectcount+=1
       
-  if(qual<=pinchance):
+  if(num1<=pinchance*quality):
     pincount+=1
     num2=random.randint(1,100)
     if(num2 <= quantity):
