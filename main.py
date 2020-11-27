@@ -14,7 +14,7 @@ qualityinput=int(input("Please select a quality level from 1-100\n"))
 quantityinput=int(input("Please select a quantity level from 1-100\n"))
 tryinput=int(input("Please enter how many tries you'd like. \n"))
 
-quality=float(1+float(qualityinput)/1000)
+quality=float(1+float(qualityinput)/100)
 quantity=int(quantityinput)
 
 additionalrollscount=0
