@@ -98,7 +98,7 @@ while(hundredcounter<tryinput):
   hundredcounter+=1
 
 
-print("This is the result of 1000 tries with these quantity and quality settings\n")
+print(f"This is the result of {tryinput} tries with these quantity and quality settings\n")
 print(f"Additional rolls: {additionalrollscount}\n")
 print(f"Kakera reward: {kakerarewardcount}\n")
 print(f"Better $rt cooldown: {betterrtcooldowncount}\n")
