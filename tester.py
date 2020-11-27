@@ -6,14 +6,14 @@
 #Loot Wlslot.png More wishlist slots (~0.45%)
 #Loot Wishprotect.png Wishprotect levels (~14%)
 #Loot Mudapin.png Mudapins (~10%)
-from random import random
-from random import seed
+import random
+
 
 print("MADE BY MUSH POGGERS XQCL\n")
 qualityinput=int(input("Please select a quality level from 1-100\n"))
 quantityinput=int(input("Please select a quantity level from 1-100\n"))
 
-quality=float(1+float(qualityinput)/100)
+quality=float(1+float(qualityinput)/1000)
 quantity=int(quantityinput)
 
 additionalrollscount=0
@@ -38,14 +38,16 @@ wishprotectcount=0
 wishprotectchance=1400
 
 pincount=0
-pintchance=1000
+pinchance=1000
 
 hundredcounter=0
-while(hundredcounter<100):
+while(hundredcounter<1000):
   num1 = random.randint(1, 10000)
   qual=quality*num1
+
   
-  if(qual<=additionalrollschance):
+  
+  if(qual<=additionalrollschance+10000):
     additionalrollscount+=1
     num2=random.randint(1,100)
     if(num2 <= quantity):
@@ -92,7 +94,10 @@ while(hundredcounter<100):
     num2=random.randint(1,100)
     if(num2 <= quantity):
       pincount+=1
-print("This is the result of 100 tries with these quantity and quality settings\n")
+  hundredcounter+=1
+
+
+print("This is the result of 1000 tries with these quantity and quality settings\n")
 print(f"Additional rolls: {additionalrollscount}\n")
 print(f"Kakera reward: {kakerarewardcount}\n")
 print(f"Better $rt cooldown: {betterrtcooldowncount}\n")
@@ -102,9 +107,6 @@ print(f"Added wishlist spots: {wishlistspotcount}\n")
 print(f"Wish protect upgrade count: {wishprotectcount}\n")
 print(f"Pin count: {pincount}\n")
 
-    
-  
-  
   
   
   
