@@ -18,28 +18,28 @@ quality=1.00+q1
 quantity=float(quantityinput)
 
 additionalrollscount=0
-additionalrollschance=5000.00
+additionalrollschance=10000.00
 
 kakerarewardcount=0
-kakerarewardchance=1000.00
+kakerarewardchance=2000.00
 
 betterrtcooldowncount=0
-betterrtcooldownchance=15.00
+betterrtcooldownchance=30.00
 
 disablespotscount=0
-disablespotschance=375.00
+disablespotschance=750.00
 
 addrollscount=0
-addrollschance=5.00
+addrollschance=10.00
 
 wishlistspotcount=0
-wishlistspotchance=22.50
+wishlistspotchance=45.00
 
 wishprotectcount=0
-wishprotectchance=700.00
+wishprotectchance=1400.00
 
 pincount=0
-pinchance=500.00
+pinchance=1000.00
 
 hundredcounter=0
 while(hundredcounter<tryinput):
