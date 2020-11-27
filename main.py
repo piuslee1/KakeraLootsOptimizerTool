@@ -145,6 +145,6 @@ if(qualitylevel==0):
 if(quantitylevel==0):
   kakquantity=0
 
-sum=kakquality+kakquantity
+sum=ansquality+ansquantity
 truesum=tryinput*sum
 print(f"You spent {sum} kak on one try of this and {truesum} on all of the tries! (in upgrade cost)\n")
