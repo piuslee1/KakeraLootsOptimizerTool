@@ -147,4 +147,4 @@ if(quantitylevel==0):
 
 sum=ansquality+ansquantity
 truesum=tryinput*sum
-print(f"You spent {sum} kak on one try of this and {truesum} on all of the tries! (in upgrade cost)\n")
+print(f"You spent {sum} kak on upgrades.\n")
