@@ -1,4 +1,4 @@
-# kak_loots_optimizer_tester
+# Kakera Loots Optimizer Tool
 
 MADE BY PIUS (MUSH)
 
