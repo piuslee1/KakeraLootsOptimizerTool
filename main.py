@@ -12,6 +12,7 @@ import random
 print("MADE BY MUSH POGGERS XQCL\n")
 qualityinput=int(input("Please select a quality level from 1-100\n"))
 quantityinput=int(input("Please select a quantity level from 1-100\n"))
+tryinput=int(input("Please enter how many tries you'd like. \n"))
 
 quality=float(1+float(qualityinput)/1000)
 quantity=int(quantityinput)
@@ -41,7 +42,7 @@ pincount=0
 pinchance=1000
 
 hundredcounter=0
-while(hundredcounter<1000):
+while(hundredcounter<tryinput):
   num1 = random.randint(1, 10000)
   qual=quality*num1
 
