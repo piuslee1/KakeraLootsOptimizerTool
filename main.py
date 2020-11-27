@@ -116,8 +116,11 @@ print(f"Wish protect upgrade count: {wishprotectcount}\n")
 print(f"Pin count: {pincount}\n")
 
   
-kakquality=2000
-kakquantity=2000
+kakquality=1800
+kakquantity=1800
+
+ansquality=0
+ansquantity=0
 
 qualitylevel=int(qualityinput)
 quantitylevel=int(quantityinput)
@@ -126,10 +129,22 @@ qualityloop=0
 quantityloop=0
 
 while (qualityloop<qualitylevel):
-  kakquality+=kakquality+200
-  quantityloop+=1
+  kakquality=kakquality+200
+  newquality=kakquality
+  ansquality+=newquality
+  qualityloop+=1
+  
 while(quantityloop<quantitylevel):
-  kakquantity++kakquantity+200
+  kakquantity=kakquantity+200
+  newquantity=kakquantity
+  ansquantity+=newquantity
   quantityloop+=1
+  
+if(qualitylevel==0):
+  kakquality=0
+if(quantitylevel==0):
+  kakquantity=0
+
 sum=kakquality+kakquantity
-print(f"You spent {sum} kak on this!\n")
+truesum=tryinput*sum
+print(f"You spent {sum} kak on one try of this and {truesum} on all of the tries! (in upgrade cost)\n")
