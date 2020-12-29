@@ -129,15 +129,13 @@ qualityloop=0
 quantityloop=0
 
 while (qualityloop<qualitylevel):
-  kakquality=kakquality+200
-  newquality=kakquality
-  ansquality+=newquality
+  kakquality+=200
+  ansquality+=kakquality
   qualityloop+=1
   
 while(quantityloop<quantitylevel):
-  kakquantity=kakquantity+200
-  newquantity=kakquantity
-  ansquantity+=newquantity
+  kakquantity+=200
+  ansquantity+=kakquantity
   quantityloop+=1
   
 if(qualitylevel==0):
